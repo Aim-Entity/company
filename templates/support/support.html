@@ -8,12 +8,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% block head  %}
   <title>Support</title>
+  <link rel="stylesheet" href="{% static 'support/support.css' %}">
   {% endblock %}
 </head>
 <body>
   {% block content %}
     <div class="container">
-      <h2>Hello</h2>
+      <div class="category">
+        <div class="topic">
+          <div class="topic-header">
+            <h2 class="topic-title">Bullying</h2>
+            <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
+          </div>
+          <!-- Topic card go below -->
+
+          <div class="topic-card">
+            <div class="tc-header">
+              <h3 class="tc-title">
+                Q. pretium vulputate sapien nec sagittis aliquam
+              </h3>
+              <img src="{% static 'support/imgs/expand.svg' %}" alt="BTN" class="tc-btn">
+            </div>
+
+            <p class="tc-text">gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum.</p>
+          </div>
+        </div>
+
+        <div class="topic">
+          <div class="topic-header">
+            <h2 class="topic-title">Mental Illness</h2>
+            <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
+          </div>
+          <!-- Topic card go below -->
+        </div>
+
+        <div class="topic">
+          <div class="topic-header">
+            <h2 class="topic-title">Stress</h2>
+            <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
+          </div>
+          <!-- Topic card go below -->
+        </div>
+
+        <div class="topic">
+          <div class="topic-header">
+            <h2 class="topic-title">Disability</h2>
+            <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
+          </div>
+          <!-- Topic card go below -->
+        </div>
+      </div>
     </div>
   {% endblock %}
 </body>
