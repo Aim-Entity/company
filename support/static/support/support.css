@@ -68,3 +68,31 @@
 .tc-btn {
   cursor: pointer;
 }
+
+/* HIDDEN CARD SECTION */
+
+.tc-text {
+  display: none;
+}
+
+.tc-text-appear{
+  display: block;
+}
+
+.topic-card {
+  display: none;
+  opacity: 0;
+
+  transition: 1s ease-in;
+}
+
+.card-appear {
+  opacity: 1;
+
+  width: 75%;
+  background: #EEF2FC;
+  border-radius: 5px;
+
+  margin-top: 35px;
+  transition: 1s ease-in;
+}

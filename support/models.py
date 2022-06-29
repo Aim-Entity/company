@@ -7,13 +7,13 @@ TOPIC_CHOICES = (
     ("Mental Illness", "Mental Illness"),
     ("Stress", "Stress"),
     ("Disability", "Disability"),
-    ("Despression", "Despression"),
+    ("Depression", "Depression"),
 )
 
 
 class SupportCard(models.Model):
     question = models.CharField(max_length=250, null=True)
-    answer = models.CharField(max_length=5000, null=True)
+    answer = models.CharField(max_length=5000, null=True, blank=True)
     topic = models.CharField(max_length=50, choices=TOPIC_CHOICES,
                              null=True, default="Bullying")
 

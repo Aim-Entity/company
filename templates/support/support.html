@@ -17,48 +17,107 @@
       <div class="category">
         <div class="topic">
           <div class="topic-header">
-            <h2 class="topic-title">Bullying</h2>
+            <h2 class="topic-title">Bullying <small style="font-weight: 400;">({{ bull_count }})</small></h2>
             <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
           </div>
           <!-- Topic card go below -->
-
+          {% for bully in bullying %}
           <div class="topic-card">
             <div class="tc-header">
               <h3 class="tc-title">
-                Q. pretium vulputate sapien nec sagittis aliquam
+                {{ bully.question }}
               </h3>
               <img src="{% static 'support/imgs/expand.svg' %}" alt="BTN" class="tc-btn">
             </div>
 
-            <p class="tc-text">gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum.</p>
+            <p class="tc-text">{{ bully.answer }}</p>
           </div>
+          {% endfor %}
         </div>
 
         <div class="topic">
           <div class="topic-header">
-            <h2 class="topic-title">Mental Illness</h2>
+            <h2 class="topic-title">Mental Illness <small style="font-weight: 400;">({{ mental_count }})</small></h2>
             <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
           </div>
           <!-- Topic card go below -->
+          {% for mental in mental_illness %}
+          <div class="topic-card">
+            <div class="tc-header">
+              <h3 class="tc-title">
+                {{ mental.question }}
+              </h3>
+              <img src="{% static 'support/imgs/expand.svg' %}" alt="BTN" class="tc-btn">
+            </div>
+
+            <p class="tc-text">{{ mental.answer }}</p>
+          </div>
+          {% endfor %}
         </div>
 
         <div class="topic">
           <div class="topic-header">
-            <h2 class="topic-title">Stress</h2>
+            <h2 class="topic-title">Stress <small style="font-weight: 400;">({{ stress_count }})</small></h2>
             <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
           </div>
           <!-- Topic card go below -->
+          {% for stress_single in stress %}
+          <div class="topic-card">
+            <div class="tc-header">
+              <h3 class="tc-title">
+                {{ stress_single.question }}
+              </h3>
+              <img src="{% static 'support/imgs/expand.svg' %}" alt="BTN" class="tc-btn">
+            </div>
+
+            <p class="tc-text">{{ stress_single.answer }}</p>
+          </div>
+          {% endfor %}
         </div>
 
         <div class="topic">
           <div class="topic-header">
-            <h2 class="topic-title">Disability</h2>
+            <h2 class="topic-title">Disability <small style="font-weight: 400;">({{ dis_count }})</small></h2>
             <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
           </div>
           <!-- Topic card go below -->
+          {% for dis in disability %}
+          <div class="topic-card">
+            <div class="tc-header">
+              <h3 class="tc-title">
+                {{ dis.question }}
+              </h3>
+              <img src="{% static 'support/imgs/expand.svg' %}" alt="BTN" class="tc-btn">
+            </div>
+
+            <p class="tc-text">{{ dis.answer }}</p>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="topic">
+          <div class="topic-header">
+            <h2 class="topic-title">Depression <small style="font-weight: 400;">({{ dep_count }})</small></h2>
+            <img src="{% static 'support/imgs/chev_down.svg' %}" alt="Chev" class="topic-dropdown">
+          </div>
+          <!-- Topic card go below -->
+          {% for dep in depression %}
+          <div class="topic-card">
+            <div class="tc-header">
+              <h3 class="tc-title">
+                {{ dep.question }}
+              </h3>
+              <img src="{% static 'support/imgs/expand.svg' %}" alt="BTN" class="tc-btn">
+            </div>
+
+            <p class="tc-text">{{ dep.answer }}</p>
+          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
+
+    <script src="{% static 'support/support.js' %}"></script>
   {% endblock %}
 </body>
 </html>
