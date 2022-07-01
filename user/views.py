@@ -7,6 +7,14 @@ import bcrypt
 import jwt
 
 
+def temp_register(request):
+    context = {
+
+    }
+
+    return render(request, "user/register.html", context)
+
+
 @api_view(['POST'])
 def register(request):
     raw_password = bytes(request.data['password'], encoding='utf-8')
