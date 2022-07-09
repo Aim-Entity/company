@@ -1,0 +1,98 @@
+.topic-title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+  color: #282824;
+  padding-bottom: 13px;
+}
+
+.topic-dropdown {
+  padding-bottom: 13px;
+  cursor: pointer;
+}
+
+.topic-header {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid #282824;
+}
+
+.category {
+  margin-top: 40px;
+  margin-left: 6rem;
+}
+
+.topic {
+  margin-bottom: 6.5rem;
+}
+
+.topic-card {
+  width: 75%;
+  background: #EEF2FC;
+  border-radius: 5px;
+
+  margin-top: 35px;
+}
+
+.tc-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.tc-text {
+  padding-left: 30px;
+  padding-bottom: 56px;
+
+  width: 75%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #5A5A5A;
+}
+
+.tc-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  color: #282824;
+}
+
+.tc-btn {
+  cursor: pointer;
+}
+
+/* HIDDEN CARD SECTION */
+
+.tc-text {
+  display: none;
+}
+
+.tc-text-appear{
+  display: block;
+}
+
+.topic-card {
+  display: none;
+  opacity: 0;
+
+  transition: 1s ease-in;
+}
+
+.card-appear {
+  opacity: 1;
+
+  width: 75%;
+  background: #EEF2FC;
+  border-radius: 5px;
+
+  margin-top: 35px;
+  transition: 1s ease-in;
+}

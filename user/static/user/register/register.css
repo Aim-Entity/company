@@ -1,0 +1,242 @@
+/* .container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.inner-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 100%;
+} */
+
+/* .quote {
+  width: 100%;
+}
+
+.swirl {
+  position: absolute;
+  z-index: -1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+
+  color: #282824;
+}
+
+.sub-title {
+  width: 337px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 164%;
+
+
+  color: #5A5A57;
+}
+
+input { 
+  width: 322px;
+  height: 45px;
+
+  border: 2px solid #B1B1B1;
+  border-radius: 5px;
+
+  font-family: 'Montserrat';
+  font-size: 12px;
+  padding-left: 22px;
+  margin-bottom: 20px;
+
+
+  color: #5A5A57;
+}
+
+label {
+  position: absolute;
+  left: 40px;
+} */
+.main_cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  width: 100%;
+}
+
+.main .signup_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+
+  color: #282824;
+}
+
+.main .signup_par {
+  width: 22rem;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 164%;
+  margin-top: 8px;
+  
+  color: #5A5A57;
+}
+
+input {
+  width: 22rem;
+  height: 45px;
+  
+  border: 2px solid #B1B1B1;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  padding-left: 1rem;
+  font-weight: 400;
+  font-size: 16px;
+
+  position: relative;
+  top: 20px;
+  
+  
+  color: #5A5A57;
+}
+
+label {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  /* margin-top: -1px; */
+
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+
+  color: #282824;
+}
+
+.inputCont {
+  height: 64px;
+
+  margin-top: 21px;
+} 
+
+.form_img {
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+}
+
+.form_btn {
+  width: 22rem;
+  height: 45px;
+  margin-top: 30px;
+
+  background: #43AC87;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 16px;
+}
+
+.left_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Quote {
+  height: 620px;  
+}
+
+.whole_section {
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: 1fr 1fr;
+
+  position: relative;
+
+  width: 100%;
+  /* height: 695px; */
+  /* padding: 4.8rem 0rem 0 4rem; */
+
+  overflow-x: hidden;
+}
+
+.Quote img {
+  position: absolute;
+  z-index: -5;
+}
+
+.quote_header {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 164%;
+  padding-top: 200px;
+  margin-left: 104px;
+  color: #FFFFFF;
+}
+
+.quote_par {
+  width: 80%;
+  
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  /* or 20px */
+  
+  
+  color: #FFFFFF;
+}
+
+.quote_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+
+  background: #C4C4C4;  
+}
+
+.quote_identity h4 {
+  /* font-weight: 500; */
+  font-size: 12px;
+  line-height: 164%;
+  /* identical to box height, or 20px */
+
+  color: #FFFFFF;
+}
+
+.quote_identity p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 164%;
+  /* identical to box height, or 20px */
+
+
+  color: #FFFFFF;
+}
+
+.quote_lower {
+  margin-left: 180px;
+  margin-top: 100px;
+}
+
+.quote_identity_cont {
+  width: 30%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

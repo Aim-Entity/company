@@ -13,7 +13,88 @@
 </head>
 <body>
   {% block content %}
-    <h1>Main Header</h1>
+  <div class="main_cont">
+    <div class=main>
+      <div class="whole_section">
+        <div class="left_section">
+          <h1 class="title">Sign Up Page</h1>
+          <p class="sub-title">lacus sed turpis tincidunt id aliquet risus feugiat in ante </p>
+          
+          <form action="" class="forms">
+            <div class=form_cont>
+              <div class=form>
+                <label class="label">First Name</label>
+                <input
+                  type='text'
+                  placeholder='John'
+                  class="forename"
+                />
+              </div>
+  
+              <div class=form>
+                <label>Last Name</label>
+                <input
+                  type='text'
+                  placeholder='Fitz'
+                  class="surname"
+                />
+              </div>
+        
+              <div class=form>
+                <label>Date of Birth</label>
+                <input
+                  type='date'
+                  class="dob"
+                />
+              </div>
+            </div>
+        
+            <div class=form_cont>
+              <div class=form>
+                <label>Email Address</label>
+                <input
+                  type='text'
+                  placeholder='address@gmail.com'
+                />
+              </div>
+        
+              <div class=form>
+                <label>Password</label>
+                <input
+                  type='password'
+                  placeholder='Your Password'
+                />
+              </div>
+        
+              <div class=form>
+                <label>Confirm Password</label>
+                <input
+                  type='password'
+                  placeholder='Confirm Password'
+                />
+              </div>
+            </div>
+            <button class="form_btn">Sign Up</button>
+          </form>
+        </div>
+        <div class="Quote">
+          <img src="{% static 'user/imgs/swirl.svg' %}" alt="Swirl" class="swirl">
+          <h2 class="quote_header" style="margin-left: 104px">Bond With people</h2>
+
+          <div class="quote_lower" style="margin-left: 180px">
+            <p class="quote_par" style="width: 80%">“quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing”</p> 
+            <div class="quote_identity_cont" style="width: 30%">
+              <div class="quote_icon"></div>
+              <div class="quote_identity">
+                <h4>Bilal uddin</h4>
+                <p>CEO of Colo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   {% endblock %}
 </body>
 </html>
