@@ -15,14 +15,16 @@
   {% block content %}
   <div class="main_cont">
     <div class=main>
+      <!-- SECTION USED TO GRID LAYOUT -->
       <div class="whole_section">
         <div class="left_section">
           <h1 class="title">Sign Up Page</h1>
           <p class="sub-title">lacus sed turpis tincidunt id aliquet risus feugiat in ante </p>
           
           <form action="" class="forms">
-            <div class=form_cont>
-              <div class=form>
+            <!-- HIDE CONT WHEN PAGINATION = 2. VICE VERSA -->
+            <div class="form_cont fc-1">
+              <div class="form">
                 <label class="label">First Name</label>
                 <input
                   type='text'
@@ -31,7 +33,7 @@
                 />
               </div>
   
-              <div class=form>
+              <div class="form">
                 <label>Last Name</label>
                 <input
                   type='text'
@@ -40,7 +42,7 @@
                 />
               </div>
         
-              <div class=form>
+              <div class="form">
                 <label>Date of Birth</label>
                 <input
                   type='date'
@@ -49,8 +51,8 @@
               </div>
             </div>
         
-            <div class=form_cont>
-              <div class=form>
+            <div class="form_cont fc-2">
+              <div class="form">
                 <label>Email Address</label>
                 <input
                   type='text'
@@ -58,7 +60,7 @@
                 />
               </div>
         
-              <div class=form>
+              <div class="form">
                 <label>Password</label>
                 <input
                   type='password'
@@ -66,18 +68,28 @@
                 />
               </div>
         
-              <div class=form>
+              <div class="form">
                 <label>Confirm Password</label>
                 <input
                   type='password'
                   placeholder='Confirm Password'
                 />
               </div>
+              
+              <!-- FORM SUBMIT BTN -->
+              <button class="form_btn submit">Sign Up</button>
             </div>
-            <button class="form_btn">Sign Up</button>
+            <button class="form_btn">Continue</button>
+
+            <!-- Paginations -->
+            <div class="pagination">
+            <button class="pagination-btn pag-1 active-pag">1</button>
+            <button class="pagination-btn pag-2">2</button>
+            </div>
           </form>
         </div>
         <div class="Quote">
+          <!-- !!! CLEAN UP THIS DISGUSTING CRAP LATER -->
           <img src="{% static 'user/imgs/swirl.svg' %}" alt="Swirl" class="swirl">
           <h2 class="quote_header" style="margin-left: 104px">Bond With people</h2>
 
