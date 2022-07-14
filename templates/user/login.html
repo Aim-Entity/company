@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block head  %}
+  <title>Register</title>
+  <link rel="stylesheet" href="{% static 'user/register/register.css' %}">
+  {% endblock %}
+</head>
+<body>
+  {% block content %}
+  <div class="main_cont">
+    <div class=main>
+      <!-- SECTION USED TO GRID LAYOUT -->
+      <div class="whole_section">
+        <div class="left_section">
+          <h1 class="title">Login Page</h1>
+          <p class="sub-title">lacus sed turpis tincidunt id aliquet risus feugiat in ante </p>
+          
+          <form action="" class="forms">
+            <!-- HIDE CONT WHEN PAGINATION = 2. VICE VERSA -->
+            <div class="form_cont fc-1">
+              <div class="form">
+                <label class="label">Email</label>
+                <input
+                  type='email'
+                  placeholder='mansoors_mum@gmail.com'
+                  class="forename"
+                />
+              </div>
+  
+              <div class="form">
+                <label>Password</label>
+                <input
+                  type='password'
+                  placeholder='******'
+                  class="surname"
+                />
+              </div>
+            </div>
+            <button class="form_btn">Continue</button>
+
+          </form>
+        </div>
+        <div class="Quote">
+          <!-- !!! CLEAN UP THIS DISGUSTING CRAP LATER -->
+          <img src="{% static 'user/imgs/swirl.svg' %}" alt="Swirl" class="swirl">
+          <h2 class="quote_header" style="margin-left: 104px">Bond With people</h2>
+
+          <div class="quote_lower" style="margin-left: 180px">
+            <p class="quote_par" style="width: 80%">“The humans are a species of learning, not of perfection. That's deep.”</p> 
+            <div class="quote_identity_cont" style="width: 35%">
+              <div class="quote_icon"></div>
+              <div class="quote_identity">
+                <h4>Habeebib Acktar</h4>
+                <p>Wife Of CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+</html>

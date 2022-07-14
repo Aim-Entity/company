@@ -90,6 +90,11 @@ label {
 
 .form {
   margin-top: 25px;
+  width: fit-content;
+}
+
+.form_cont {
+  width: fit-content;
 }
 
 .left_section {
@@ -100,7 +105,8 @@ label {
 }
 
 .Quote {
-  height: 620px;  
+  height: 620px;
+  width: 100%;
 }
 
 .whole_section {
@@ -120,6 +126,7 @@ label {
 .Quote img {
   position: absolute;
   z-index: -5;
+  /* object-fit: cover; */
 }
 
 .quote_header {
@@ -201,6 +208,7 @@ label {
   border: 2px solid #43AC87;
   background: #F9F9F9;
   border-radius: 10px;
+  cursor: pointer;
 
   font-weight: 400;
   font-size: 21px;

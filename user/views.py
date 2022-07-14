@@ -15,6 +15,14 @@ def temp_register(request):
     return render(request, "user/register.html", context)
 
 
+def temp_login(request):
+    context = {
+
+    }
+
+    return render(request, "user/login.html", context)
+
+
 @api_view(['POST'])
 def register(request):
     raw_password = bytes(request.data['password'], encoding='utf-8')
