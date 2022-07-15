@@ -301,22 +301,60 @@ label {
 }
 
 @media screen and (max-width: 1040px){
-  .Quote {
-    display: none;
+  .quote_header {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 164%;
+    padding-top: 200px;
+    margin-left: 104px;
+    color: #FFFFFF;
+  }
+  
+  .quote_par {
+    width: 80%;
+    
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 164%;
+    /* or 20px */
+    
+    
+    color: #FFFFFF;
+  }
+  
+  .quote_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+  
+    background: #C4C4C4;  
   }
 
-  .whole_section {
-    grid-template-columns: 1fr;
+  .quote_identity_cont {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
   }
-
-  .left_section {
-    width: 22rem;
-    margin: 0px;
+  
+  .quote_identity h4 {
+    /* font-weight: 500; */
+    font-size: 12px;
+    line-height: 164%;
+    /* identical to box height, or 20px */
+  
+    color: #FFFFFF;
   }
-
-  .left_section h1, .left_section p {
-    text-align: center;
+  
+  .quote_identity p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 164%;
+    /* identical to box height, or 20px */
+  
+  
+    color: #FFFFFF;
   }
 }

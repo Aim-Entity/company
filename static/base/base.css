@@ -40,21 +40,33 @@ a {
 
 .nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.logo {
+/* .logo {
   padding-left: 6.875%;
-}
+} */
 
 .mid-nav {
-  width: 34%;
+  width: 32%;
 }
 
 .end-nav {
-  width: 23%;
-  padding-right: 6.875%;
+  width: 17%;
+  /* padding-right: 6.875%; */
 }
 
 /* NEED TO ALIGN NAV PROPERLY IN MIDDLE */
+
+@media screen and (max-width: 1050px){
+  .nav div ul li {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .nav div ul li {
+    font-size: 1rem;
+  }
+}
