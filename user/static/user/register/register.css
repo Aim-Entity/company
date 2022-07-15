@@ -1,10 +1,11 @@
-.main_cont {
+
+/* .main_cont {
   display: flex;
   justify-content: center;
   position: relative;
 
   width: 100%;
-}
+} */
 
 .title {
   font-weight: 600;
@@ -111,7 +112,7 @@ label {
 
 .whole_section {
   display: grid;
-  /* justify-content: space-between; */
+  /* justify-items: space-between; */
   grid-template-columns: 1fr 1fr;
 
   position: relative;
@@ -218,8 +219,6 @@ label {
 }
 
 .active-pag {
-  width: 40px;
-  height: 40px;
   border: none;
 
   background: #43AC87;
@@ -230,4 +229,71 @@ label {
 
 
   color: #FFFFFF;
+}
+
+/* DESKTOP RESPONSIVENESS */
+
+@media screen and (min-width: 1300px) {
+  .Quote {
+    width: 640px;
+    justify-self: end;
+  }
+  .whole_section {
+    width: 100%;
+  }
+
+  input {
+    width: 28rem;
+    height: 70px;
+  
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 24px;
+  
+    position: relative;
+    top: 20px;
+  }
+
+  label {
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 1rem;
+    margin-top: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-top: 40px;
+  
+    color: #282824;
+  }
+  
+  .sub-title {
+    width: 28rem;
+  
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 164%;
+    margin-top: 8px;
+    
+    color: #5A5A57;
+  }
+
+  .form_btn {
+    width: 28rem;
+    height: 45px;
+  }
+
+  .pagination {
+    display: flex;
+    width: 28rem;
+    justify-content: center;
+  }
 }
